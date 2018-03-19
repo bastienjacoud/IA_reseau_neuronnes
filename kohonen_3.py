@@ -14,9 +14,11 @@ from __future__ import division
 import numpy
 # Librairie d'affichage
 import matplotlib.pyplot as plt
+
 # Pour lire les données MNIST
 import gzip, pickle
 
+from numpy.ma import exp
 
 
 class Neuron:
@@ -46,8 +48,8 @@ class Neuron:
     @param x: entrée du neurone
     @type x: numpy array
     '''
-    # TODO Attention il faut bien renvoyer la distance entre le poids et l'entrée et pas 0/1 suivant si le neurone est gagnant ou pas comme dans le TP (la détermination du neurone gagnant se fait ailleurs dans le code)
-    self.y = 1000
+    # Attention il faut bien renvoyer la distance entre le poids et l'entrée et pas 0/1 suivant si le neurone est gagnant ou pas comme dans le TP (la détermination du neurone gagnant se fait ailleurs dans le code)
+    self.y = numpy.linalg.norm(x-self.weights)
 
   def learn(self,eta,sigma,posxbmu,posybmu,x):
     '''
@@ -63,9 +65,8 @@ class Neuron:
     @param x: entrée du neurone
     @type x: numpy array
     '''
-    # TODO
-    self.weights[:] = numpy.random.random(self.weights.shape)
-
+    delta = eta * (exp(-(((self.posx - posxbmu)**2 + (self.posy - posybmu)**2) / (2 * sigma * sigma)))) * (x - self.weights)
+    self.weights[:] = self.weights[:] + delta
 
 class SOM:
   ''' Classe implémentant une carte de Kohonen. '''
@@ -281,12 +282,11 @@ if __name__ == '__main__':
       # Affichage du contenu de la figure
       plt.pause(0.00001)
       plt.draw()
-  # Fin de l'affichage interactif
-  if VERBOSE:
-    # Désactivation du mode interactif
-    plt.ioff()
+    # Fin de l'affichage interactif
+    if VERBOSE:
+      plt.ioff()
   # Affichage des poids du réseau
   network.plot()
-  # Affichage de l'erreur de quantification vectorielle moyenne après apprentissage
+    # Affichage de l'erreur de quantification vectorielle moyenne après apprentissage
   print("erreur de quantification vectorielle moyenne ",network.MSE(samples))
 
