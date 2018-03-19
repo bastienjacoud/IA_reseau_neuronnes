@@ -214,7 +214,7 @@ if __name__ == '__main__':
   # Taux d'apprentissage
   ETA = 0.05
   # Largeur du voisinage
-  SIGMA = 1.4
+  SIGMA = 1.2
   # Nombre de pas de temps d'apprentissage
   N = 30000
   # Affichage interactif de l'évolution du réseau (TODO ATTENTION METTRE À FAUX POUR LES DONNÉES MNIST)

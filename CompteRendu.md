@@ -46,21 +46,28 @@
 **Taux d'apprentissage η :**
 
 +  Qualitatif : 
-    +  Lorsque η augmente, on remarque que l'apprentissage est beaucoup plus rapide.
+    +  Lorsque η augmente, on remarque que l'apprentissage est beaucoup plus rapide, mais il faut qu'il reste raisonnable, sinon les neurones oublient en totalité leurs apprentisages précédents.
 +  Quantitatif :
+    +  Pour η = 0.005
+        + X = 0.005224761871506615
     +  Pour η = 0.05
         + X = 0.004782894021075809
     +  Pour η = 0.2
         + X = 0.005402302488511184
+    +  Pour η = 0.4
+        + X = 0.0041503514523293155
     +  Pour η = 0.8
-        + X = 
+        + X = 0.0041503514523293155
 
 **Largeur du voisinage σ :**
 
 +  Qualitatif :
     +  Plus le voisinage est large (i.e. plus σ est grand), plus l'apprentissage est rapide
 +  Quantitatif :
-    +  TODO
+    +  Pour σ = 2.0
+        +  X = 0.008718179897472523
+    +  Pour σ = 1.2
+        +  X = 0.0033529229725718177
 
 **Nombre de pas de temps d'apprentisage N :**
 
