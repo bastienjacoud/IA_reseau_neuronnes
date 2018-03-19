@@ -1,11 +1,15 @@
 # Compte Rendu Projet
 
-[Eq1]: ./img/Eqn1.gif
-[Eq2]: ./img/Eqn2.gif
-[Eq3]: ./img/Eqn3.gif
-[Eq4]: ./img/Eqn4.gif
+[Git]: https://github.com/bastienjacoud/IA_reseau_neuronnes
 
-[Kohonen]: ./kohonen_3.py
+[Eq1]: https://raw.githubusercontent.com/bastienjacoud/IA_reseau_neuronnes/master/img/Eqn1.gif
+[Eq2]: https://raw.githubusercontent.com/bastienjacoud/IA_reseau_neuronnes/master/img/Eqn2.gif
+[Eq3]: https://raw.githubusercontent.com/bastienjacoud/IA_reseau_neuronnes/master/img/Eqn3.gif
+[Eq4]: https://raw.githubusercontent.com/bastienjacoud/IA_reseau_neuronnes/master/img/Eqn4.gif
+
+[Kohonen]: https://github.com/bastienjacoud/IA_reseau_neuronnes/blob/master/kohonen_3.py
+
++  Dépôt du projet : [GitHub][Git]
 
 ## Question 1 : Étude théorique du comportement de l'algorithme
 
