@@ -35,4 +35,4 @@
 
 ## Question 2 : Implémentation de l'algorithme
 
-+  Algorithme implémenté dans le script [```Kohonen```][kohonen].
++  Algorithme implémenté dans le script [Kohonen][kohonen].
