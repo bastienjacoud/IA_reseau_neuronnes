@@ -2,14 +2,16 @@
 
 [Eq1]: ./img/Eqn1.gif
 [Eq2]: ./img/Eqn2.gif
+[Eq3]: ./img/Eqn3.gif
+[Eq4]: ./img/Eqn4.gif
+
+[Kohonen]: ./kohonen_3.py
 
 ## Question 1 : Étude théorique du comportement de l'algorithme
 
-+  **Quelle sera la prochaine valeur du poids du neurone gagnant dans le cas où η=0 ?**
+**Quelle sera la prochaine valeur du poids du neurone gagnant dans le cas où η=0 ?**
 
-On applique la formule 
-![Equation][Eq1]
-avec η=0, on trouve ainsi que la différence de poids sera toujours nulle, donc le poids restera le même pour tous les neurones, donc pour le neurone gagnant à fortiori.
++ On applique la formule ![Equation][Eq1] avec η=0, on trouve ainsi que la différence de poids sera toujours nulle, donc le poids restera le même pour tous les neurones, donc pour le neurone gagnant à fortiori.
 
 **Quelle sera la prochaine valeur du poids du neurone gagnant dans le cas où η=1 ?**
 
@@ -26,3 +28,11 @@ avec η=0, on trouve ainsi que la différence de poids sera toujours nulle, donc
 **En déduire l'influence que doit avoir σ sur la "grille" de neurones, sera-t-elle plus "lâche" ou plus "serrée" si σ augmente ?**
 
 +  Les différences seront plus faibles, la "grille" de neurones sera donc plus "serrée"
+
+**Prenons le cas d’une carte avec un seul neurone qui rȩcoit 2 entrées x1 et x2. Durant l’apprentissage x1 (respectivement x2) est présenté n1 (respectivement n2) fois. Après l’apprentissage où se situera géométriquement le poids du neurone ?**
+
++ Il y a un unique neurone, on peut donc appliquer la formule en ayant ![Equation][Eq4], ainsi on trouve, après avoir appliqué l'entrée x1 n1 fois et l'entrée x2 n2 fois, ![Equation][Eq3].
+
+## Question 2 : Implémentation de l'algorithme
+
++  Algorithme implémenté dans le script [```Kohonen```][kohonen].
