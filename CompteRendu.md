@@ -15,6 +15,9 @@
 [Kohonen]: https://github.com/bastienjacoud/IA_reseau_neuronnes/blob/master/kohonen_3.py
 
 +  Dépôt du projet : [GitHub][Git]
++  Etudiants :
+    + JACOUD Bastien
+    + REMOND Victor
 
 ## Question 1 : Etude théorique du comportement de l'algorithme
 
@@ -122,10 +125,11 @@
 +  Qualitatif :
     +  L'utilisation des second et troisième jeux de données donne comme résultat une grille qui ne s'étend pas ou très peu sur les cadrants dans lesquels aucun point n'est généré.
     +  On peut voir que dans le cas du quatrième jeu de données (MNIST), nous n'avons jamais la totalité de la carte découverte. En effet, le programme, lancé deux fois d'affilées avec les mêmes paramètres donnera deux sorties différentes. Dans les résultats ci-dessous, on peut voir qu'une seule zone est visible, mais que ce n'est jamais la même.
-    ![Output_1][Out1]
-    ![Output_2][Out2]
-    ![Output_3][Out3]
-    ![Output_4][Out4]
+
+    ![Output 1][Out1]
+    ![Output 2][Out2]
+    +  Autres résultats ici : [sortie 3][Out3] et [sortie 4][Out4]
+
 +  Quantitatif :
     +  Avec le second jeu de données :
         +  X = 0.004512250568130622
